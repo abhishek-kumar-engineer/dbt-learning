@@ -18,6 +18,11 @@ models:
           data_tests:
             - not_null
             - unique
+        - name: gross_amount
+          data_tests:
+            - generic_non_negative_value:
+                arguments:
+                  column_name: gross_amount
 
     - name: bronze_store
       config :
