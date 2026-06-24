@@ -41,3 +41,7 @@ models:
     gold:
       +materialized: table
       schema: gold
+
+seeds:
+  abhishek_dbt_learn:
+    +schema: silver
